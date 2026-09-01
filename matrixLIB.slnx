@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="matrixLIB/matrixLIB.vcxproj" Id="e627055d-6331-4258-9752-3147b0d17b9d" />
+</Solution>

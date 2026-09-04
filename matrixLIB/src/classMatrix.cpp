@@ -11,20 +11,22 @@ Matrix::Matrix(int rows, int columns)
 	this->rows = rows;
 	this->columns = columns;
 }
-void Matrix::show()
+//
+double Matrix::getrows() const
 {
-    for (std::size_t i = 0; i < arr.size(); ++i)
-    {
-        std::cout << arr[i];
-
-        if ((i + 1) % columns == 0)
-            std::cout << '\n';
-        else
-            std::cout << " ";
-    }
+    return rows;
+}
+double Matrix::getcolumns() const
+{
+    return columns;
+}
+ double Matrix::get(int row,int column) const
+{
+	int index = row * columns + column;
+	return Matrix::arr[index];
 }
 
-void Matrix::add(double x)
+void Matrix::push(double x)
 {
 	Matrix::arr.push_back(x);
 }

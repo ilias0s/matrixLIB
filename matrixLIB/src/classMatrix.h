@@ -9,7 +9,10 @@ public:
 	//constructors:
 	Matrix();
 	Matrix(int rows, int columns);
+	//gets: 
+	double getrows() const;
+	double getcolumns() const;
 	//
-	void add(double x);
-	void show();
+	void push(double x);
+	double get(int row, int column) const;
 };

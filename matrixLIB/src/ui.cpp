@@ -48,5 +48,27 @@ void ui::run()
 	showMatrix(matrix1);
 	std::cout << " \n\nsecond matrix : \n\n";
 	showMatrix(matrix2);
+	
+	std::cout << "choose an operation : \n 1 . addition\n";
+
+
+
+	int useroperation;
+	std::cin >> useroperation;
+	
+	if (useroperation == 1)
+	{
+		showMatrix(matrix1);
+		std::cout << "  +\n";
+		showMatrix(matrix2);
+		std::cout << "  =\n";
+		try {
+			matrix1 += matrix2;
+			showMatrix(matrix1);
+		}
+		catch (const std::runtime_error& error) {
+			std::cout << error.what();
+		}
+	}
 
 }

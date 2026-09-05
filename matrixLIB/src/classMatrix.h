@@ -15,4 +15,6 @@ public:
 	//
 	void push(double x);
 	double get(int row, int column) const;
+	//addition operator:
+	Matrix& operator+=(const Matrix& other);
 };
